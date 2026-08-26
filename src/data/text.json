@@ -1,0 +1,31 @@
+{
+    "landing": {
+        "title": "Kia ora! 👋",
+        "name": "I'm Gemma, ",
+        "body": "Software Engineer with 3 years of professional development experience, having progressed from customer support into full-stack development at Easy Crypto. Experienced across Vue and React frontends, PHP and Node.js backends, and third-party service integrations.",
+        "subBody": "I enjoy building practical, reliable solutions and have a strong understanding of both technical and customer perspectives."
+    },
+    "nav": {
+        "links": ["home", "experience", "projects", "contact"]
+    },
+    "experience": {
+        "title": "Experience",
+        "roles": [
+            {
+                "title": "Intermediate Software Engineer",
+                "company": "Easy Crypto (acquired by Swyftx)",
+                "tasks": [
+                    "one",
+                    "two",
+                    "three"
+                ]
+            },
+            {
+                "title": "Accounts Receivable Specialist",
+                "company": "Chartered Accountants Australia & New Zealand"
+            }
+        ],
+        "seeMore": "Previous roles available on my {link}",
+        "linkText": "LinkedIn"
+    }
+}
