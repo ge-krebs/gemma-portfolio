@@ -12,21 +12,19 @@ function Landing () {
     return (
         <>
         <div className="flex flex-col md:flex-row p-5 md:p-5">
-            {/* col left */}
             <div className="md:w-1/2 items-center">
                 <img className="w-full" src="memoji-laptop.png" />
             </div>
-            {/* col right */}
             <div className="md:w-1/2 justify-end pt-5">
-                <div className="flex flex-col justify-end h-full">
-                    <h1 className="text-white text-7xl">
+                <div className="flex flex-col justify-end h-full text-base">
+                    <h1 className="text-white text-6xl md:text-7xl font-poppins font-bold">
                         {text.landing.title}
                     </h1>
-                    <p className="text-sm pt-4">
-                        <span className="text-pale-blue text-3xl">{text.landing.name}</span>
+                    <p className="pt-4">
+                        <span className="text-pale-blue text-3xl font-poppins font-light">{text.landing.name}</span>
                         {text.landing.body}
                     </p>
-                    <p className="pt-2 text-sm">
+                    <p className="pt-4">
                         {text.landing.subBody}
                     </p>
                 </div>
