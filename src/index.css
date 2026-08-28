@@ -1,15 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-    --color-navy: #2F2C45;
-    --color-pale-blue: #96A1D9;
+    --color-bg: #282D3B;
+    --color-text: #FFFFFF;
+    --color-accent: #96A1D9;
+    --color-pale-green: #96D9A3;
+    --color-pale-pink: #D996A0;
+    --color-pale-yellow: #D9C896;
     --font-poppins: "Poppins", sans-serif
 }
 
+.light {
+    --color-bg: #FFFFFF;
+    --color-text: #282D3B;
+    --color-accent: #3a3f5a;
+}
+
 body {
-    background-color: #2F2C45;
-    color: white;
+    background-color: var(--color-bg);
+    color: var(--color-text);
     font-family: "Roboto", sans-serif;
     font-weight: 300;
 }
@@ -19,7 +31,17 @@ body {
     top: 0;
     overflow: hidden;
     height: 50px;
-    box-shadow: 0px 0px 15px 0px #96A1D9;
+    background-color: var(--color-bg);
+}
+
+.clean-box-shadow {
+    box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    0 2px 4px rgba(0, 0, 0, 0.05),
+    0 4px 8px rgba(0, 0, 0, 0.05),
+    0 8px 16px rgba(0, 0, 0, 0.05),
+    0 16px 32px rgba(0, 0, 0, 0.05),
+    0 32px 64px rgba(0, 0, 0, 0.05);
 }
 
 .pointer {
@@ -28,7 +50,7 @@ body {
 
 .popup-nav {
     position: fixed;
-    background-color: #96A1D9;
-    height: 35vh;
     width: 100vw;
+    opacity: 95%;
+    background-color: var(--color-bg);
 }

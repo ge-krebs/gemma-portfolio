@@ -1,6 +1,6 @@
 {
     "landing": {
-        "title": "Kia ora! 👋",
+        "title": "Kia ora!",
         "name": "I'm Gemma, ",
         "body": "a Software Engineer with 3 years of experience, having progressed from customer support into full-stack development at Easy Crypto. Experienced across Vue and React frontends, PHP and Node.js backends, and third-party service integrations.",
         "subBody": "I enjoy building practical, reliable solutions and have a strong understanding of both technical and customer perspectives."
@@ -8,24 +8,36 @@
     "nav": {
         "links": ["Experience", "Projects", "Contact"]
     },
+    "skills": {
+        "title": "Skills",
+        "languages": ["JavaScript", "TypeScript", "PHP", "HTML", "CSS"],
+        "frontend": ["Vue.js", "React", "Tailwind", "Buefy"],
+        "backend": ["APIs", "3rd Party Integrations"],
+        "tools": ["Git", "Datadog", "VSCode", "Figma", "Jira"]
+    },
     "experience": {
-        "title": "Experience",
+        "title": "My Developer Timeline",
         "roles": [
             {
-                "title": "Intermediate Software Engineer",
+                "title": "Intermediate Software Engineer - Easy Crypto",
+                "subTitle": "Previously Junior Software Engineer (Aug 2023 - Feb 2025)",
                 "company": "Easy Crypto (acquired by Swyftx)",
                 "tasks": [
-                    "one",
-                    "two",
-                    "three"
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel rutrum diam. Vivamus dignissim ex facilisis purus commodo sollicitudin.",
+                    "Vestibulum condimentum tincidunt erat et laoreet. Aliquam pretium ex libero, sed congue nulla sodales quis. Aenean quis tellus commodo, volutpat est malesuada, rhoncus augue. Morbi auctor libero at ipsum porta, ac."
                 ]
             },
             {
-                "title": "Accounts Receivable Specialist",
-                "company": "Chartered Accountants Australia & New Zealand"
+                "title": "Senior Support Specialist - Easy Crypto",
+                "subTitle": "Previously Support Specialist (Jun 21 - Jul 22)",
+                "company": "Easy Crypto",
+                "tasks": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel rutrum diam. Vivamus dignissim ex facilisis purus commodo sollicitudin.",
+                    "Vestibulum condimentum tincidunt erat et laoreet. Aliquam pretium ex libero, sed congue nulla sodales quis. Aenean quis tellus commodo, volutpat est malesuada, rhoncus augue. Morbi auctor libero at ipsum porta, ac."
+                ]
             }
         ],
-        "seeMore": "Previous roles available on my {link}",
+        "seeMore": "Previous roles available on my ",
         "linkText": "LinkedIn"
     }
 }
