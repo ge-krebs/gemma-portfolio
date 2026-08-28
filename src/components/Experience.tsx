@@ -1,21 +1,17 @@
 import text from '../data/text.json'
 import { ArrowDown } from 'lucide-react'
 
-function Experience () {
-
-  function nextPage () {
-    console.log('clicked')
-  }
+function Experience ({reference}) {
   return (
   <>
-  <div className="w-dvw h-dvh md:p-15 pt-10">
+  <div ref={reference} className="w-dvw h-dvh md:p-15 pt-10">
     <h2 className="p-5 font-poppins font-bold text-3xl">
       {text.experience.title}
     </h2>
     {/* update URL */}
     {/* <p className="text-center text-xs">{text.experience.seeMore}<a href="#" target="_blank" className="pointer underline underline-offset-1 text-pale-blue">{text.experience.linkText}</a></p> */}
     <div className="w-full flex justify-center md:pt-1">
-        <button onClick={nextPage}><ArrowDown /></button>
+        <button><ArrowDown /></button>
     </div>
   </div>
   </>

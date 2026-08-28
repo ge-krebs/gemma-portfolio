@@ -1,13 +1,10 @@
 import text from '../data/text.json'
 import { ArrowDown } from "lucide-react"
 
-function Skills () {
-  function nextPage () {
-    // hello
-  }
+function Skills ({ reference, onExperienceClick }) {
   return (
     <>
-    <div className="w-dvw md:p-15 pt-10">
+    <div ref={reference} className="w-dvw md:p-15 pt-10">
       <h2 className="flex justify-center pb-5 font-poppins font-bold text-3xl text-center">
         {text.skills.title}
       </h2>
@@ -24,7 +21,7 @@ function Skills () {
           </div>
         ))}
       <div className="w-full flex justify-center pt-4">
-          <button onClick={nextPage}><ArrowDown /></button>
+          <button onClick={onExperienceClick}><ArrowDown /></button>
       </div>
     </div>
     </>

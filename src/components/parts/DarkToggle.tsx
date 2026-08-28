@@ -24,7 +24,6 @@ function DarkToggle () {
       }
     }, [darkMode]);
 
-  console.log(darkMode)
   function toggleSwitch() {
     setDarkMode(darkMode == 'light' ? 'dark' : 'light')
   }

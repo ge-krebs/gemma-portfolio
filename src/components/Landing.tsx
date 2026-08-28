@@ -9,13 +9,10 @@ import { Typewriter } from 'react-simple-typewriter'
 //     })
 // }
 
-function Landing () {
-  function nextPage () {
-    console.log('clicked')
-  }
+function Landing ({ reference, onSkillsClick }) {
 return (
     <>
-    <div id="landing" className="p-5 md:p-20 h-screen">
+    <div id="landing" ref={reference} className="p-5 md:p-20 h-screen">
       <div className="flex flex-col md:flex-row h-full">
         <div className="md:w-2/5 h-1/2 md:h-full flex items-center justify-center">
           <img className="w-full h-full object-contain" src="memoji-laptop.png" />
@@ -37,7 +34,7 @@ return (
         </div>
       </div>
       <div className="w-full flex justify-center md:pt-1">
-        <button onClick={nextPage}><ArrowDown /></button>
+        <button onClick={onSkillsClick}><ArrowDown /></button>
       </div>
     </div>
     </>

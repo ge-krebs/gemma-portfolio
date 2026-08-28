@@ -3,9 +3,25 @@ import text from '../data/text.json'
 import DarkToggle from './parts/DarkToggle'
 import { House, Menu, X } from 'lucide-react'
 
-function Nav () {
+function Nav ({ onHomeClick, onSkillsClick, onExperienceClick}) {
   const [isOpen, setMenu] = useState(false)
   function toggleMenu () { setMenu(!isOpen) }
+  
+  function scrollToSection (section) {
+    const sec = section.toLowerCase()
+    console.log('scroll to', sec)
+    switch (sec) {
+      case "skills":
+        onSkillsClick()
+        break;
+      case "home":
+        onHomeClick()
+        break;
+      case "experience":
+        onExperienceClick()
+        break
+    }
+  }
 
   return (
     <>
@@ -16,18 +32,16 @@ function Nav () {
           <button onClick={toggleMenu} className="md:hidden pointer">{isOpen ? <X /> : <Menu />}</button>
           <div className="hidden md:block">
             <ul className="flex gap-4 items-center h-full font-poppins font-light">
-              <House />
+              <House onClick={() => scrollToSection('home')}/>
               {text.nav.links.map((item, index) => (
-                  <a href="#" key={index}>{item}</a>
+                  <a key={index} onClick={() => scrollToSection(item)}>{item}</a>
               ))}
             </ul>
           </div>
         </div>
         {/* dark/light mode switcher */}
-        {/* update colour */}
         <div className="flex gap-2 basis-1/2 justify-end">
             <DarkToggle />
-            {/* <img className="w-10" src="memoji-laptop.png" /> */}
         </div>
       </div>
     </div>
