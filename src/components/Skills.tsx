@@ -11,30 +11,18 @@ function Skills () {
       <h2 className="flex justify-center pb-5 font-poppins font-bold text-3xl text-center">
         {text.skills.title}
       </h2>
-      <div className="flex justify-center flex-row gap-2 p-2 flex-wrap">
-        <span className="inline-block align-middle">Languages</span>
-        {text.skills.languages.map((item, index) => (
-          <button key={index} className="bg-accent border rounded-sm p-1 clean-box-shadow">{item}</button>
+        {text.skills.categories.map((i, index) => (
+          <div className="flex flex-col p-4 md:items-center">
+            <h3 className="font-poppins font-semibold">{i.title}</h3>
+            <div className="flex flex-row gap-2 pt-2 flex-wrap">
+                {text.skills.categories[index].skills.map((item, index) => (
+                <button key={index} className="min-w-20 border rounded-sm p-1 clean-box-shadow bg-bg dark:bg-white dark:text-bg font-jetbrains">
+                  {item}
+                </button>
+                ))}
+            </div>
+          </div>
         ))}
-      </div>
-      <div className="flex justify-center flex-row gap-2 p-2">
-        <span>Frontend</span>
-        {text.skills.frontend.map((item, index) => (
-          <button key={index} className="bg-pale-green border rounded-sm p-1 clean-box-shadow">{item}</button>
-        ))}
-      </div>
-      <div className="flex justify-center flex-row gap-2 p-2">
-        <span>Backend</span>
-        {text.skills.backend.map((item, index) => (
-          <button key={index} className="bg-pale-pink border rounded-sm p-1 clean-box-shadow">{item}</button>
-        ))}
-      </div>
-      <div className="flex justify-center flex-row gap-2 p-2">
-        <span>Tools</span>
-        {text.skills.tools.map((item, index) => (
-          <button key={index} className="bg-pale-yellow border rounded-sm p-1 clean-box-shadow">{item}</button>
-        ))}
-      </div>
       <div className="w-full flex justify-center pt-4">
           <button onClick={nextPage}><ArrowDown /></button>
       </div>

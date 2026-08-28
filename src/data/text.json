@@ -10,10 +10,24 @@
     },
     "skills": {
         "title": "Skills",
-        "languages": ["JavaScript", "TypeScript", "PHP", "HTML", "CSS"],
-        "frontend": ["Vue.js", "React", "Tailwind", "Buefy"],
-        "backend": ["APIs", "3rd Party Integrations"],
-        "tools": ["Git", "Datadog", "VSCode", "Figma", "Jira"]
+        "categories": [
+            {
+                "title": "Languages",
+                "skills": ["JAVASCRIPT", "TYPESCRIPT", "PHP", "HTML", "CSS"]
+            },
+            {
+                "title": "Frontend",
+                "skills": ["VUE.JS", "REACT", "TAILWIND", "BUEFY"]
+            },
+            {
+                "title": "Backend",
+                "skills": ["APIS", "3RD PARTY INTEGRATIONS", "LARAVEL"]
+            },
+            {
+                "title": "Tools",
+                "skills": ["GIT", "DATADOG", "VSCODE", "FIGMA", "JIRA"]
+            }
+        ]
     },
     "experience": {
         "title": "My Developer Timeline",
