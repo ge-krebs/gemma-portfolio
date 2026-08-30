@@ -10,6 +10,7 @@ function App() {
   const homeRef = useRef(null)
   const skillsRef = useRef(null)
   const experienceRef = useRef(null)
+  const contactRef = useRef(null)
 
   const scrollTo = (elementRef) => {
     elementRef.current?.scrollIntoView({
@@ -24,11 +25,12 @@ function App() {
       onHomeClick={() => scrollTo(homeRef)}
       onSkillsClick={() => scrollTo(skillsRef)}
       onExperienceClick={() => scrollTo(experienceRef)}
+      onContactClick={() => scrollTo(contactRef)}
     />
     <Landing reference={homeRef} onSkillsClick={() => scrollTo(skillsRef)} />
     <Skills reference={skillsRef} onExperienceClick={() => scrollTo(experienceRef)}/>
-    <Experience reference={experienceRef} />
-    <Contact />
+    <Experience reference={experienceRef} onContactClick={() => scrollTo(contactRef)} />
+    <Contact reference={contactRef} />
     </>
   )
 }

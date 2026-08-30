@@ -7,7 +7,7 @@
     --color-bg: #282D3B;
     --color-bg-inverse: #FFFFFF;
     --color-text: #FFFFFF;
-    --color-accent: #96A1D9;
+    --color-accent: #96C5F7;
     --color-pale-green: #96D9A3;
     --color-pale-pink: #D996A0;
     --color-pale-yellow: #D9C896;
@@ -25,7 +25,7 @@
     --color-bg: #FFFFFF;
     --color-bg-inverse: #282D3B;
     --color-text: #282D3B;
-    --color-accent: #3a3f5a;
+    --color-accent: #96C5F7;
 }
 
 .loading {
@@ -45,6 +45,7 @@ body {
     overflow: hidden;
     height: 50px;
     background-color: var(--color-bg);
+    z-index: 10;
 }
 
 .clean-box-shadow {
@@ -71,4 +72,18 @@ body {
 .submit-btn:hover {
     background-color: var(--color-bg-inverse);
     color: var(--color-bg);
+}
+
+/* timeline styles */
+
+.vertical-timeline-element-icon.shadow-size-small {
+    box-shadow: 0 0 0 2px var(--color-text), inset 0 1px 0 rgba(0, 0, 0, .08), 0 2px 0 4px rgba(0, 0, 0, .05) !important;
+}
+
+.vertical-timeline-element-content {
+    box-shadow: none !important;
+}
+
+.accent-box-shadow {
+    box-shadow: 0 2px 6px var(--color-accent) !important;
 }

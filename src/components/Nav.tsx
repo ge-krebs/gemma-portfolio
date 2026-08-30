@@ -3,7 +3,7 @@ import text from '../data/text.json'
 import DarkToggle from './parts/DarkToggle'
 import { House, Menu, X } from 'lucide-react'
 
-function Nav ({ onHomeClick, onSkillsClick, onExperienceClick}) {
+function Nav ({ onHomeClick, onSkillsClick, onExperienceClick, onContactClick}) {
   const [isOpen, setMenu] = useState(false)
   function toggleMenu () { setMenu(!isOpen) }
   
@@ -18,6 +18,9 @@ function Nav ({ onHomeClick, onSkillsClick, onExperienceClick}) {
         break;
       case "experience":
         onExperienceClick()
+        break
+      case "contact":
+        onContactClick()
         break
     }
   }

@@ -26,7 +26,7 @@ return (
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-center md:pt-1">
+      <div className="w-full flex justify-center md:pt-1 text-accent">
         <button onClick={onSkillsClick}><ArrowDown /></button>
       </div>
     </div>

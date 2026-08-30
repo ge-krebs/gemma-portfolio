@@ -5,7 +5,7 @@ interface LoadingProps {
   className?: string
 }
 
-function Loading ({ size = 16, className = ''}: LoadingProps) {
+function Loading ({ size = 20, className = ''}: LoadingProps) {
   return (
     <LoaderCircle size={size} className={`animate-spin ${className}`} />
   )

@@ -20,7 +20,7 @@ function Skills ({ reference, onExperienceClick }) {
             </div>
           </div>
         ))}
-      <div className="w-full flex justify-center pt-4">
+      <div className="w-full flex justify-center pt-4 text-accent">
           <button onClick={onExperienceClick}><ArrowDown /></button>
       </div>
     </div>

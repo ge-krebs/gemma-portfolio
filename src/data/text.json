@@ -31,30 +31,13 @@
     },
     "experience": {
         "title": "My Developer Timeline",
-        "roles": [
-            {
-                "title": "Intermediate Software Engineer - Easy Crypto",
-                "subTitle": "Previously Junior Software Engineer (Aug 2023 - Feb 2025)",
-                "company": "Easy Crypto (acquired by Swyftx)",
-                "tasks": [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel rutrum diam. Vivamus dignissim ex facilisis purus commodo sollicitudin.",
-                    "Vestibulum condimentum tincidunt erat et laoreet. Aliquam pretium ex libero, sed congue nulla sodales quis. Aenean quis tellus commodo, volutpat est malesuada, rhoncus augue. Morbi auctor libero at ipsum porta, ac."
-                ]
-            },
-            {
-                "title": "Senior Support Specialist - Easy Crypto",
-                "subTitle": "Previously Support Specialist (Jun 21 - Jul 22)",
-                "company": "Easy Crypto",
-                "tasks": [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel rutrum diam. Vivamus dignissim ex facilisis purus commodo sollicitudin.",
-                    "Vestibulum condimentum tincidunt erat et laoreet. Aliquam pretium ex libero, sed congue nulla sodales quis. Aenean quis tellus commodo, volutpat est malesuada, rhoncus augue. Morbi auctor libero at ipsum porta, ac."
-                ]
-            }
-        ],
         "seeMore": "Previous roles available on my ",
         "linkText": "LinkedIn"
     },
     "contact": {
-        "title": "Contact"
+        "title": "Contact",
+        "msgSent": "Message sent!",
+        "soon": "I'll be in touch soon",
+        "send": "Send"
     }
 }
