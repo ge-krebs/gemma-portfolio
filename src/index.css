@@ -5,6 +5,7 @@
 
 @theme {
     --color-bg: #282D3B;
+    --color-bg-inverse: #FFFFFF;
     --color-text: #FFFFFF;
     --color-accent: #96A1D9;
     --color-pale-green: #96D9A3;
@@ -14,10 +15,21 @@
     --font-jetbrains: "JetBrains Mono", monospace;
 }
 
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+      }
+}
+
 .light {
     --color-bg: #FFFFFF;
+    --color-bg-inverse: #282D3B;
     --color-text: #282D3B;
     --color-accent: #3a3f5a;
+}
+
+.loading {
+    animation: var(--animate-spin);
 }
 
 body {
@@ -43,13 +55,6 @@ body {
     0 8px 16px rgba(0.5, 0.5, 0.5, 0.05),
     0 16px 32px rgba(0.5, 0.5, 0.5, 0.05),
     0 32px 64px rgba(0.5, 0.5, 0.5, 0.05);
-    /* box-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.05),
-    0 2px 4px rgba(0, 0, 0, 0.05),
-    0 4px 8px rgba(0, 0, 0, 0.05),
-    0 8px 16px rgba(0, 0, 0, 0.05),
-    0 16px 32px rgba(0, 0, 0, 0.05),
-    0 32px 64px rgba(0, 0, 0, 0.05); */
 }
 
 .pointer {
@@ -61,4 +66,9 @@ body {
     width: 100vw;
     opacity: 95%;
     background-color: var(--color-bg);
+}
+
+.submit-btn:hover {
+    background-color: var(--color-bg-inverse);
+    color: var(--color-bg);
 }

@@ -53,5 +53,8 @@
         ],
         "seeMore": "Previous roles available on my ",
         "linkText": "LinkedIn"
+    },
+    "contact": {
+        "title": "Contact"
     }
 }

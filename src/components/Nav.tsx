@@ -9,7 +9,6 @@ function Nav ({ onHomeClick, onSkillsClick, onExperienceClick}) {
   
   function scrollToSection (section) {
     const sec = section.toLowerCase()
-    console.log('scroll to', sec)
     switch (sec) {
       case "skills":
         onSkillsClick()
@@ -50,7 +49,7 @@ function Nav ({ onHomeClick, onSkillsClick, onExperienceClick}) {
       <div className="w-full h-full pt-10 pb-10">
         <ul className="flex flex-col gap-10 text-center justify-stretch">
           {text.nav.links.map((item, index) => (
-            <a key={index} href={`#${item}`} className="font-poppins font-light" onClick={toggleMenu}>{item}</a>
+            <a key={index} className="font-poppins font-light pointer" onClick={() => scrollToSection(item)} >{item}</a>
           ))}
         </ul>
       </div>

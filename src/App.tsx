@@ -3,6 +3,7 @@ import Landing from './components/Landing.tsx'
 import Nav from './components/Nav.tsx'
 import Experience from './components/Experience.tsx'
 import Skills from './components/Skills.tsx'
+import Contact from './components/Contact.tsx'
 import { useRef } from 'react'
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
     <Landing reference={homeRef} onSkillsClick={() => scrollTo(skillsRef)} />
     <Skills reference={skillsRef} onExperienceClick={() => scrollTo(experienceRef)}/>
     <Experience reference={experienceRef} />
+    <Contact />
     </>
   )
 }

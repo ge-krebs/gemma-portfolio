@@ -1,13 +1,6 @@
 import text from '../data/text.json'
 import { ArrowDown } from 'lucide-react'
 import { Typewriter } from 'react-simple-typewriter'
-// import { useState, useEffect } from 'react'
-
-// function typewriter (text, speed) {
-//     useEffect(() => {
-
-//     })
-// }
 
 function Landing ({ reference, onSkillsClick }) {
 return (
