@@ -3,7 +3,15 @@ import text from '../data/text.json'
 import DarkToggle from './parts/DarkToggle'
 import { House, Menu, X } from 'lucide-react'
 
-function Nav ({ onHomeClick, onSkillsClick, onExperienceClick, onContactClick, onProjectsClick}) {
+interface NavProps {
+  onHomeClick: () => void;
+  onSkillsClick: () => void;
+  onExperienceClick: () => void;
+  onContactClick: () => void;
+  onProjectsClick: () => void;
+}
+
+function Nav ({ onHomeClick, onSkillsClick, onExperienceClick, onContactClick, onProjectsClick}: NavProps ) {
   const [isOpen, setMenu] = useState(false)
   function toggleMenu () { setMenu(!isOpen) }
   

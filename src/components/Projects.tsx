@@ -1,7 +1,12 @@
 import NextArrow from "./parts/NextArrow"
 import text from "../data/text.json"
 
-function Projects ({ reference, onContactClick }) {
+interface SkillsProps {
+    reference: React.RefObject<HTMLDivElement>;
+    onContactClick: () => void;
+  }
+
+function Projects ({ reference, onContactClick }: SkillsProps) {
     return (
     <>
     <div ref={reference} className="w-dvw md:p-15 pt-10 p-5">

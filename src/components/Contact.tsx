@@ -3,7 +3,11 @@ import { Mail } from 'lucide-react'
 import { useState } from 'react'
 import Loading from './parts/Loading'
 
-function Contact ({ reference }) {
+interface ContactProps {
+  reference: React.RefObject<HTMLDivElement>;
+}
+
+function Contact ({ reference }: ContactProps) {
   const [formSuccess, setFormSuccess] = useState(false)
   const [loading, setLoading] = useState(false)
   const [errorMsg, handleErrorMsg] = useState({ text: '', show: false})

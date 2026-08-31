@@ -4,7 +4,12 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css'
 import NextArrow from './parts/NextArrow'
 
-function Experience ({reference, onProjectsClick}) {
+interface ExperienceProps {
+  reference: React.RefObject<HTMLDivElement>;
+  onProjectsClick: () => void;
+}
+
+function Experience ({reference, onProjectsClick}: ExperienceProps) {
   const timelineData = [
     {
       "id": 1,

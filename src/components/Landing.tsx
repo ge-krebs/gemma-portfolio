@@ -3,7 +3,12 @@ import { Typewriter } from 'react-simple-typewriter'
 import { useState, useEffect } from 'react'
 import NextArrow from './parts/NextArrow'
 
-function Landing ({ reference, onSkillsClick }) {
+interface LandingProps {
+  reference: React.RefObject<HTMLDivElement>;
+  onSkillsClick: () => void;
+}
+
+function Landing ({ reference, onSkillsClick }: LandingProps) {
 const [smallScreen, setSmallScreen] = useState(window.innerHeight < 740);
 
 useEffect(() => {

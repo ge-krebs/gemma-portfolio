@@ -1,6 +1,11 @@
 import { ArrowDown } from "lucide-react"
 
-function NextArrow ({ onSectionClick }) {
+interface ArrowProps {
+  onSectionClick: () => void;
+}
+
+
+function NextArrow ({ onSectionClick }: ArrowProps) {
   return (
   <div className="w-full flex justify-center md:pt-1 text-accent">
     <button aria-label="Scroll to next section" onClick={onSectionClick}><ArrowDown /></button>
