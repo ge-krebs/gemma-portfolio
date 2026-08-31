@@ -5,7 +5,7 @@ import 'react-vertical-timeline-component/style.min.css'
 import NextArrow from './parts/NextArrow'
 
 interface ExperienceProps {
-  reference: React.RefObject<HTMLDivElement>;
+  reference: React.RefObject<HTMLDivElement> | null;
   onProjectsClick: () => void;
 }
 

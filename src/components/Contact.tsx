@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Loading from './parts/Loading'
 
 interface ContactProps {
-  reference: React.RefObject<HTMLDivElement>;
+  reference: React.RefObject<HTMLDivElement> | null;
 }
 
 function Contact ({ reference }: ContactProps) {

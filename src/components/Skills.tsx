@@ -2,7 +2,7 @@ import text from '../data/text.json'
 import NextArrow from './parts/NextArrow'
 
 interface SkillsProps {
-  reference: React.RefObject<HTMLDivElement>;
+  reference: React.RefObject<HTMLDivElement> | null;
   onExperienceClick: () => void;
 }
 

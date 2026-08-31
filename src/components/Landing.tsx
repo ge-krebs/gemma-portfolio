@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import NextArrow from './parts/NextArrow'
 
 interface LandingProps {
-  reference: React.RefObject<HTMLDivElement>;
+  reference: React.RefObject<HTMLDivElement> | null;
   onSkillsClick: () => void;
 }
 
