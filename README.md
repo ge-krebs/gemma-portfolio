@@ -1,75 +1,27 @@
-# React + TypeScript + Vite
+# My Portfolio - Version 1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Showcasing my experience and work as a developer, this is version 1 😃
 
-Currently, two official plugins are available:
+🔗 **Live site:** TBC
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+React, TypeScript, TailWindCSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Libraries used: react-vertical-timeline-component, lucide-react, splitforms
 
-## Expanding the ESLint configuration
+## Features
+- Responsive design, built mobile-first
+- Dark/light mode toggle, dark by default
+- Contact form built using splitforms
+- Animated scroll trigger for each section
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## A Note on AI Use
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Every line of code in this project was written by me. After taking an extended break from work, I wanted to use this project as a way of getting my hands back on the keyboard. I used Claude for debugging support, explaining concepts I was rusty on and evaluating package and library choices but NOT no code was generated or replaced by AI. 
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Normally I use AI in my everyday coding for assistance but this project was about rebuilding my skills as a developer.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Why?
 
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+For the first time in my career I am looking for a new developer or engineer role. I took a 6 month break to travel the work and have now returned home. I plan on using this time (before finding employment) to work on personal projects, which I'll add to my portfolio upon completion. 
