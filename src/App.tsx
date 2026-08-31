@@ -15,7 +15,7 @@ function App() {
   const contactRef = useRef<HTMLDivElement>(null)
   const projectRef = useRef<HTMLDivElement>(null)
 
-  const scrollTo = (elementRef: React.RefObject<HTMLDivElement>) => {
+  const scrollTo = (elementRef: React.RefObject<HTMLDivElement | null>) => {
     elementRef.current?.scrollIntoView({
       behavior: 'smooth',
       block: 'start'
