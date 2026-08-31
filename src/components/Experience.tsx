@@ -52,11 +52,10 @@ function Experience ({reference, onProjectsClick}: ExperienceProps) {
     <h2 className="p-5 font-poppins font-bold text-3xl text-center">
       {text.experience.title}
     </h2>
-    <VerticalTimeline lineColor={'var(--color-text)'} >
+    <VerticalTimeline lineColor={'var(--color-text)'} animate={true} >
       {timelineData.map((item, index) => (
         <VerticalTimelineElement
         key={index}// sort line color
-        animate={true}
         contentStyle={{ background: 'var(--color-bg)', color: 'var(--color-text)', border: '2px solid var(--color-text)' }}
         contentArrowStyle={{ borderRight: '7px solid  var(--color-text)' }}
         date={item.date}

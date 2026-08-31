@@ -9,13 +9,13 @@ import Footer from './components/Footer.tsx'
 import { useRef } from 'react'
 
 function App() {
-  const homeRef = useRef(null)
-  const skillsRef = useRef(null)
-  const experienceRef = useRef(null)
-  const contactRef = useRef(null)
-  const projectRef = useRef(null)
+  const homeRef = useRef<HTMLDivElement>(null)
+  const skillsRef = useRef<HTMLDivElement>(null)
+  const experienceRef = useRef<HTMLDivElement>(null)
+  const contactRef = useRef<HTMLDivElement>(null)
+  const projectRef = useRef<HTMLDivElement>(null)
 
-  const scrollTo = (elementRef) => {
+  const scrollTo = (elementRef: React.RefObject<HTMLDivElement>) => {
     elementRef.current?.scrollIntoView({
       behavior: 'smooth',
       block: 'start'

@@ -15,7 +15,7 @@ function Nav ({ onHomeClick, onSkillsClick, onExperienceClick, onContactClick, o
   const [isOpen, setMenu] = useState(false)
   function toggleMenu () { setMenu(!isOpen) }
   
-  function scrollToSection (section) {
+  function scrollToSection (section : string) {
     const sec = section.toLowerCase()
     if (isOpen) { setMenu(false) }
     switch (sec) {
