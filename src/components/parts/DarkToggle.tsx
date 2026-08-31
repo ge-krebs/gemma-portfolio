@@ -29,8 +29,8 @@ function DarkToggle () {
   }
   return (
     <>
-      <button>{darkMode == 'dark' ? <Moon className="size-5" color="var(--color-accent)"/> : <Sun className="size-5" color="#E5C168"/>}</button>
-      <button onClick={toggleSwitch} className="pointer">{darkMode == 'dark' ? <ToggleRight /> : <ToggleLeft color="var(--color-text)" />}</button>
+      <span aria-hidden="true" className="flex items-center justify-center">{darkMode == 'dark' ? <Moon className="w-5" color="var(--color-accent)"/> : <Sun className="w-5" color="#E5C168"/>}</span>
+      <button aria-label="dark light mode toggle" onClick={toggleSwitch} className="pointer">{darkMode == 'dark' ? <ToggleRight /> : <ToggleLeft color="var(--color-text)" />}</button>
     </>
   )
 }

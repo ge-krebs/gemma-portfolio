@@ -2,11 +2,11 @@
     "landing": {
         "title": "Kia ora!",
         "name": "I'm Gemma, ",
-        "body": "a Software Engineer with 3 years of experience, having progressed from customer support into full-stack development at Easy Crypto. Experienced across Vue and React frontends, PHP and Node.js backends, and third-party service integrations.",
+        "body": "a Software Engineer with 3 years of experience, having progressed from senior customer support into full-stack development at Easy Crypto (acquired by Swyftx). Experienced building customer and internal facing products with Vue.js, PHP, and Laravel, including building and maintaining REST APIs",
         "subBody": "I enjoy building practical, reliable solutions and have a strong understanding of both technical and customer perspectives."
     },
     "nav": {
-        "links": ["Skills", "Experience", "Projects", "Contact"]
+        "links": ["Skills", "Experience", "Contact"]
     },
     "skills": {
         "title": "Skills",
@@ -21,11 +21,15 @@
             },
             {
                 "title": "Backend",
-                "skills": ["APIS", "3RD PARTY INTEGRATIONS", "LARAVEL"]
+                "skills": ["REST APIS", "3RD PARTY INTEGRATIONS", "LARAVEL"]
             },
             {
                 "title": "Tools",
-                "skills": ["GIT", "DATADOG", "VSCODE", "FIGMA", "JIRA"]
+                "skills": ["GIT", "VSCODE", "FIGMA", "JIRA"]
+            },
+            {
+                "title": "Databases",
+                "skills": ["MYSQL"]
             }
         ]
     },
@@ -39,5 +43,8 @@
         "msgSent": "Message sent!",
         "soon": "I'll be in touch soon",
         "send": "Send"
+    },
+    "projects": {
+        "title": "My Projects"
     }
 }

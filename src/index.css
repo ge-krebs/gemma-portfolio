@@ -8,9 +8,6 @@
     --color-bg-inverse: #FFFFFF;
     --color-text: #FFFFFF;
     --color-accent: #96C5F7;
-    --color-pale-green: #96D9A3;
-    --color-pale-pink: #D996A0;
-    --color-pale-yellow: #D9C896;
     --font-poppins: "Poppins", sans-serif;
     --font-jetbrains: "JetBrains Mono", monospace;
 }
@@ -58,6 +55,10 @@ body {
     0 32px 64px rgba(0.5, 0.5, 0.5, 0.05);
 }
 
+.small-landing-img {
+    width: 100px !important;
+}
+
 .pointer {
     cursor: pointer;
 }
@@ -67,6 +68,7 @@ body {
     width: 100vw;
     opacity: 95%;
     background-color: var(--color-bg);
+    z-index: 9;
 }
 
 .submit-btn:hover {

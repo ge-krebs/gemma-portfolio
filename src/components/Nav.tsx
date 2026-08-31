@@ -3,12 +3,13 @@ import text from '../data/text.json'
 import DarkToggle from './parts/DarkToggle'
 import { House, Menu, X } from 'lucide-react'
 
-function Nav ({ onHomeClick, onSkillsClick, onExperienceClick, onContactClick}) {
+function Nav ({ onHomeClick, onSkillsClick, onExperienceClick, onContactClick, onProjectsClick}) {
   const [isOpen, setMenu] = useState(false)
   function toggleMenu () { setMenu(!isOpen) }
   
   function scrollToSection (section) {
     const sec = section.toLowerCase()
+    if (isOpen) { setMenu(false) }
     switch (sec) {
       case "skills":
         onSkillsClick()
@@ -22,6 +23,9 @@ function Nav ({ onHomeClick, onSkillsClick, onExperienceClick, onContactClick}) 
       case "contact":
         onContactClick()
         break
+      case "projects":
+        onProjectsClick()
+        break
     }
   }
 
@@ -31,9 +35,9 @@ function Nav ({ onHomeClick, onSkillsClick, onExperienceClick, onContactClick}) 
     <div id="navbar" className="w-full clean-box-shadow">
       <div className="flex pl-15 pr-15 md:pr-25 md:pl-25 h-full">
         <div className="flex basis-1/2">
-          <button onClick={toggleMenu} className="md:hidden pointer">{isOpen ? <X /> : <Menu />}</button>
+          <button aria-label="menu" onClick={toggleMenu} className="md:hidden pointer">{isOpen ? <X /> : <Menu />}</button>
           <div className="hidden md:block">
-            <ul className="flex gap-4 items-center h-full font-poppins font-light">
+            <ul className="flex gap-4 items-center h-full font-jetbrains font-light">
               <House onClick={() => scrollToSection('home')}/>
               {text.nav.links.map((item, index) => (
                   <a key={index} onClick={() => scrollToSection(item)}>{item}</a>

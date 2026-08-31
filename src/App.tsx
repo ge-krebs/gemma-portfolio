@@ -4,6 +4,8 @@ import Nav from './components/Nav.tsx'
 import Experience from './components/Experience.tsx'
 import Skills from './components/Skills.tsx'
 import Contact from './components/Contact.tsx'
+import Footer from './components/Footer.tsx'
+// import Projects from './components/Projects.tsx'
 import { useRef } from 'react'
 
 function App() {
@@ -11,6 +13,7 @@ function App() {
   const skillsRef = useRef(null)
   const experienceRef = useRef(null)
   const contactRef = useRef(null)
+  const projectRef = useRef(null)
 
   const scrollTo = (elementRef) => {
     elementRef.current?.scrollIntoView({
@@ -26,11 +29,14 @@ function App() {
       onSkillsClick={() => scrollTo(skillsRef)}
       onExperienceClick={() => scrollTo(experienceRef)}
       onContactClick={() => scrollTo(contactRef)}
+      onProjectsClick={() => scrollTo(projectRef)}
     />
     <Landing reference={homeRef} onSkillsClick={() => scrollTo(skillsRef)} />
     <Skills reference={skillsRef} onExperienceClick={() => scrollTo(experienceRef)}/>
-    <Experience reference={experienceRef} onContactClick={() => scrollTo(contactRef)} />
+    <Experience reference={experienceRef} onProjectsClick={() => scrollTo(projectRef)} />
+    {/* <Projects reference={projectRef} onContactClick={() => scrollTo(contactRef)} /> */}
     <Contact reference={contactRef} />
+    <Footer />
     </>
   )
 }

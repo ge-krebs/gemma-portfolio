@@ -1,5 +1,5 @@
 import text from '../data/text.json'
-import { ArrowDown } from "lucide-react"
+import NextArrow from './parts/NextArrow'
 
 function Skills ({ reference, onExperienceClick }) {
   return (
@@ -20,9 +20,7 @@ function Skills ({ reference, onExperienceClick }) {
             </div>
           </div>
         ))}
-      <div className="w-full flex justify-center pt-4 text-accent">
-          <button onClick={onExperienceClick}><ArrowDown /></button>
-      </div>
+      <NextArrow onSectionClick={onExperienceClick}/>
     </div>
     </>
   )
